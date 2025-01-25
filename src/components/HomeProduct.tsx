@@ -5,20 +5,20 @@ import { CiShoppingCart } from "react-icons/ci";
 const HomeProduct = () => {
   const products = [
     { src: "/assets/Image.png", name: "Library stool chair", price: "$20" },
-    { src: "/assets/Image copy.png", name: "Library stool chair", price: "$20" },
-    { src: "/assets/Image3.png", name: "Library stool chair", price: "$20" },
+    { src: "/assets/image copy.png", name: "Library stool chair", price: "$20" },
+    { src: "/assets/image3.png", name: "Library stool chair", price: "$20" },
     { src: "/assets/Image4.png", name: "Library stool chair", price: "$20" }
   ];
 
   const categories = [
-    { src: "/assets/image.png", name: "Category Name", productsCount: "3,584 Products" },
-    { src: "/assets/image.png", name: "Category Name", productsCount: "3,584 Products" },
-    { src: "/assets/image.png", name: "Category Name", productsCount: "3,584 Products" }
+    { src: "/assets/Image.png", name: "Category Name", productsCount: "3,584 Products" },
+    { src: "/assets/Image.png", name: "Category Name", productsCount: "3,584 Products" },
+    { src: "/assets/Image.png", name: "Category Name", productsCount: "3,584 Products" }
   ];
 
   const products1 = [
     { src: "/assets/Image.png", name: "Library stool chair", price: "$20" },
-    { src: "/assets/Image copy.png", name: "Library stool chair", price: "$20" },
+    { src: "/assets/image copy.png", name: "Library stool chair", price: "$20" },
     { src: "/assets/Image3.png", name: "Library stool chair", price: "$20" },
     { src: "/assets/Image4.png", name: "Library stool chair", price: "$20" }
   ];
@@ -28,10 +28,7 @@ const HomeProduct = () => {
       {/* Product Section */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 mt-10">
         {products.map((product, index) => (
-          <div
-            key={index}
-            className="w-full rounded-[6px]"
-          >
+          <div key={index} className="w-full rounded-[6px]">
             <Image src={product.src} alt="loading" width={312} height={312} />
             <div className="text-green-400 flex justify-between items-center mt-2">
               <span>{product.name}</span>
@@ -43,12 +40,9 @@ const HomeProduct = () => {
       </div>
 
       {/* Top Categories Section */}
-      <div className="grid grid-cols-1 sm:grid-cols-1  lg:grid-cols-3 gap-4 sm:gap-6 mt-16">
+      <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6 mt-16">
         {categories.map((category, index) => (
-          <div
-            key={index}
-            className="w-full rounded-lg overflow-hidden relative"
-          >
+          <div key={index} className="w-full rounded-lg overflow-hidden relative">
             <Image
               src={category.src}
               alt="Loading"
@@ -82,10 +76,7 @@ const HomeProduct = () => {
       <h1 className="text-2xl font-bold text-center mt-16">Our Products</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 mt-10">
         {products1.map((product, index) => (
-          <div
-            key={index}
-            className="w-full rounded-[6px]"
-          >
+          <div key={index} className="w-full rounded-[6px]">
             <Image src={product.src} alt="loading" width={312} height={312} />
             <div className="text-green-400 flex justify-between items-center mt-2">
               <span>{product.name}</span>
@@ -99,10 +90,7 @@ const HomeProduct = () => {
       {/* Second Product Section */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 mt-10">
         {products1.map((product, index) => (
-          <div
-            key={index}
-            className="w-full rounded-[6px]"
-          >
+          <div key={index} className="w-full rounded-[6px]">
             <Image src={product.src} alt="loading" width={312} height={312} />
             <div className="text-green-400 flex justify-between items-center mt-2">
               <span>{product.name}</span>
