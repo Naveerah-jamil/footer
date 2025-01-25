@@ -61,12 +61,12 @@ const HomeProduct = () => {
       {/* Image Section */}
       <div className="flex flex-col lg:flex-row items-center gap-4 sm:gap-6 mt-16">
         <div className="w-full lg:w-[700px] flex-shrink-0">
-          <Image src="/image1.png" alt="Loading" width={700} height={700} className="mx-auto" />
+          <Image src="/Image1.png" alt="Loading" width={700} height={700} className="mx-auto" />
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
           {[...Array(4)].map((_, index) => (
             <div key={index} className="w-full">
-              <Image src="/image3.png" alt="loading" width={312} height={312} className="mx-auto" />
+              <Image src="/Image3.png" alt="loading" width={312} height={312} className="mx-auto" />
             </div>
           ))}
         </div>
